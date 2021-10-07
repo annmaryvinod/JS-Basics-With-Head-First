@@ -104,6 +104,86 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
 
 
 
+
+
+8. Functions
+
+     * Help us reuse a bit of a code over and over in case we need it.
+     * Syntax:
+            1. The function keyword begins a function definition.
+            2. Next we give the function a name.
+            3. Then we have the parameters of the function. We put these in parentheses after the function name.
+            4. Then we have the body of the function within {}.
+
+            eg ; "function bark(name, weight) {}"
+            
+                      <!--Here name and weight are the parameters! -->
+
+    * The browser executes the code within the function only when it is called!
+                  <!-- How To Call a Function ? -->
+                   * To call, or invoke, a function, just use its name, followed by an open parenthesis,then any values you need to pass it,
+                   separated by commas, and finally a closing parenthesis. The values in the parentheses are arguments. 
+
+
+                   * When we call the bark function,the arguments are assigned to the parameter names.
+
+                   * After you call the function, the body of the function does all the work.
+
+    * You can pass pretty much any JavaScript value as an argument, like a string, a boolean, or a number.
+              <!-- Eg; saveMyProfile("krissy", 1991, 3.81, false); -->
+
+              <!-- Remember : So you’ll only define your parameters once, but you’ll probably call your function with many different arguments.-->
+
+     "console.log"  and "alert" are built in functions. 
+         So all the string arguments to alert and console.log are also arguments!
+
+    * JavaScript passes arguments to a function using pass-by-value.   
+      <!-- For a clear idea visit page no. 92 or pdf page no.132 of HeadFirst JS1 -->
+          
+           Eg; 
+                 1. Let’s declare a variable age, and initialize it to the value 7. 
+                      var age = 7;
+
+                 2. Now let’s declare a function addOne, with a parameter named x, that adds 1 to the value of x.
+                    
+                     function addOne(x) {
+                         x = x + 1;}
+                 3. Now let’s call the function addOne, pass it the variable age as the argument. The value in age is copied into the parameter x.
+
+                      addOne(age);
+
+                 4. Now the value of x is incremented by one. But remember x is a copy, so only x is incremented, not age.   
+
+                       function addOne(x) {
+                           x = x + 1;}
+
+         * The real impact of pass-by-value is that any changes to a parameter’s value within the function will affect only the parameter, not the original variable passed to the function.
+            Because of pass-by-value, whatever happens to a parameter in the function, stays in the function.
+
+
+                 
+ 
+  
+
+
+
+
+     
+
+  
+
+
+
+
+
+
+
+
+
+            
+
+
+
  
 
  
