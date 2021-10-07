@@ -39,6 +39,7 @@ Learning JS with Head First!
 NOTE 1 ; JavaScript, unlike HTML markup, is case sensitive, meaning upper- and lowercase matters. The variable counter is different from the variable Counter. 
 
 NOTE 2; Did you notice that the = operator is used in assignments,while the == operator tests for equality? That is, we use one equal sign to assign values to variables. We use two equal signs to test if two values are equal to each other. Substituting one for the other is a common coding mistake.
+=== stands for exactly equal to.
 
 4. WHILE loop
     
@@ -92,6 +93,18 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
 
          <!-- prompt is followed by  a string that appears as an instruction !-->
 
+7. Math.random function ;
+     * Math.random is part of standard JavaScript and returns a random number.
+     *  The only problem is it returns numbers like 0.128, 0.830, 0.9, 0.42.
+        These numbers are between 0 and 1 (not including exactly 1).  
+                                  <!-- NOTE THE POINT : it does not include 1.
+                                        If you want a number between 0-4 just multiply the Math.random func with 5
+                                         If you want to return an integer just nest the Math.random func inside a Math.floor func!
+                                                          Eg; Math.floor(Math.random() * 5)-->
+
+
+
+ 
 
  
  
