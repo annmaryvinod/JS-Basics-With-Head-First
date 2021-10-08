@@ -160,8 +160,96 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
          * The real impact of pass-by-value is that any changes to a parameter’s value within the function will affect only the parameter, not the original variable passed to the function.
             Because of pass-by-value, whatever happens to a parameter in the function, stays in the function.
 
+9. Return
+      * The return statement ends function execution and specifies a value to be returned to the function caller.
+      * The expression whose value is to be returned. If omitted, undefined is returned instead.
+      * A function immediately stops at the point where return is called.
 
-                 
+                             Q: What does a function return if it doesn’t have a return statement?
+
+                              A: A function without a return statement returns undefined.
+10. Global and local variables
+
+      * Global variables; they’re accessible everywhere in your JavaScript code.
+    
+      *  Local variables are defined within a function. They are know locally within the function. They are not used outside the function in the code.
+
+      * If a variable is declared outside a function, it’s GLOBAL. If it’s declared inside a function, it’s LOCAL.
+
+          * Globals live as long as the page. A global variable begins life when its JavaScript is loaded into the page. But, your global variable’s life ends when the page goes away. Even if you reload the same page, all your global variables are destroyed and then recreated in the newly loaded page.
+
+          * Local variables typically disappear when your function ends. Local variables are created when your function is first called and live until the function returns (with a value or not).
+
+          * Don’t forget to declare your locals!
+                              If you use a variable without declaring it first, that variable will be global. That means that even if you use a variable for the first time inside a function
+                              (because you meant for it to be local), the variable will actually be global, and be available outside the function too (which might cause confusion later). So, don’t forget to declare your locals!
+
+                              <!-- DECLARE MEANS TO USE THE var KEYWORD! -->
+                                         
+
+                                         function playTurn(player, location) {
+                                             points = 0;
+                                             if (location == 1) {
+                                                 points = points + 100;
+                                                 }
+                                                 return points;
+                                                 }
+            <!-- Here points is a global variable though it is inside a function. It can be used outside this function also.
+                  REASON : points is not declared within the function as "var points;" -->
+
+
+
+          * What happens when I name a local variable the same thing as an existing global variable?  
+                   
+                   1. You “shadow” your global.
+                   2. Any references to the variable within the function refer to the local variable and not the global.
+                   3. So we say the global variable is in the shadow of the local variable (in other words we can’t see the global variable because the local version is in our way).
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                                                                                      Webville Guide to Code Hygiene
+
+
+
+1. Global variables, right at the TOP!
+
+2. Functions like to sit together.
+
+3. Let your local variables be declared at the TOP of the function they’re in.
+
+
+
+
+      
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
  
   
 
