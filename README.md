@@ -288,7 +288,29 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
             by providing values for myarray at indices 0, 1, and 2. Until you add values yourself, the values in myarray are undefined.
 
             * Notice here "new" is lowercase while "Array" is capitalised in the syntax.
+
+13. Objects in javascript
+     * How to create an object in javascript?
+         1. Add a variable declaration for the object.
+         2. Next, start an object with a left curly brace.
+         3. Then all the object’s properties go inside.Each property has a name, a colon and then a value. Here we have strings, numbers and one boolean as property values.
+         4. Notice that each property is separated by a comma. 
+         5. We end the object with a closing curly brace, and just like any other variable declaration, we end this one with a semicolon.
+            Eg ;   
+                var chevy = {
+                make: "Chevy",
+                model: "Bel Air",
+                year: 1957,
+                color: "red",
+                passengers: 2,
+                convertible: false,
+                mileage: 1021
+                };
+        6. Now you’ve got a live object complete with a set of properties. And you’ve assigned your object to a variable that you can use to access and change its properties.  
+
+      
                              
+
 
 
 
