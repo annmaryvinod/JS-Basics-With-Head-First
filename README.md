@@ -125,7 +125,7 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
                    separated by commas, and finally a closing parenthesis. The values in the parentheses are arguments. 
 
 
-                   * When we call the bark function,the arguments are assigned to the parameter names.
+                   * When we call the function,the arguments are assigned to the parameter names.
 
                    * After you call the function, the body of the function does all the work.
 
