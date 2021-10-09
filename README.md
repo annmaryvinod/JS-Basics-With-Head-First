@@ -262,6 +262,43 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
        * The second part is the CONDITIONAL test. Each time we loop, we perform this test, and if it is false, we stop.
        * And the third part is where we INCREMENT the counter. This happensonce per loop, after all the statements in the BODY.
 
+12. Methods of creating an array:
+      * Create a variable and assign it an array to which you literally type the items.
+      * Create an empty array and then add items by using the index.
+            Eg ; var empty = [];
+                 empty [0] = 23455;
+                 empty [1] = 87837786;
+                 empty [2] = "cat";
+
+      * Create an empty array and use "push" 
+
+           Eg; var myArray = [];
+                myArray.push = 243524;
+                myArray.push ="doggy";
+                myArray.push =565655;
+
+   <!-- Here the array looks like :
+              myArray = [243524 , "doggy" , 565655] 
+              It follows the order as index!-->
+
+       * Using the new Array
+
+         1. Eg ;   var myarray = new Array(3);
+            * This creates a new array, with three empty spots in it (that is, an array with length 3, but no values yet). Then you can fill them, just like you normally would,
+            by providing values for myarray at indices 0, 1, and 2. Until you add values yourself, the values in myarray are undefined.
+
+            * Notice here "new" is lowercase while "Array" is capitalised in the syntax.
+                             
+
+
+
+
+
+
+
+
+
+
 
 
 

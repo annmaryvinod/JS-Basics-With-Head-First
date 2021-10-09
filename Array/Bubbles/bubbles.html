@@ -31,6 +31,20 @@
         console.log("Bubbles test : " + scores.length);
         console.log("Highest Bubble score :" + highScore);
 
+
+        // Loop for the solutions with high scores!
+
+        // An empty array is created to consider the multiple number of solutions with high scores
+
+        var bestSolutions = [];
+
+        for (var i = 0; i < scores.length; i++){
+            if (scores[i] == highScore){
+                bestSolutions.push(i);
+            }
+        }
+        console.log("Solutions with the highest score: " + bestSolutions);
+    
         document.write("Check Console!");
     </script>
 </body>
