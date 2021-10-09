@@ -209,7 +209,7 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-                                                                                      Webville Guide to Code Hygiene
+                                                                Webville Guide to Code Hygiene
 
 
 
@@ -218,6 +218,76 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
 2. Functions like to sit together.
 
 3. Let your local variables be declared at the TOP of the function they’re in.
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+10. Arrays:
+
+    1. An array is a JavaScript type that can hold many values.
+    2.   How to create an array :
+        * EG:
+              var flavors = ["vanilla", "butterscotch", "lavender", "chocolate", "cookie dough"];
+
+              * To begin the array,use the "[" character...
+              * And then list each item of the array...
+              * Notice that each item in the array is separated by a comma.
+              * ... and end the array with the "]" character. 
+
+    3. When you create an array, each item is placed at a location, or index, in the array.
+    4. The first item has an index of 0 and next 1 etc.
+    5. The array is assigned to a variable.
+    6. How to access an array item :   To access an item just follow the array variable name with an index, surrounded by square brackets. 
+    7. Updating a value in the array : 
+                        Eg;        flavors[3] = "vanilla chocolate chip";
+    
+    8. How big is that array anyway? : 
+        * Here we use the length property : Eg ; "var numFlavors = flavors.length;"
+             <!-- This gives us the lenght i.e the number of items present!-->
+
+        * Notice that because we start numbering the indices of the array at 0, the length of the array will always be one more than the last index.
+
+
+   9. How to find or get the last item of an array?
+         
+         * Eg ;  var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+         <!-- To find the last item follow : -->
+               var last = products.length - 1;
+               var recent = products[last];
+        <!-- var last gives a number that is 1 less than the array length = index of the last item -->
+        <!-- var recent gives the last item itself! -->
+
+11. FOR loop
+       *  A for loop starts with the keyword for.
+       * In the parentheses, there are three parts. The first part is the loop
+       variable INITIALIZATION.This initialization happens only once, before the for loop starts.   
+       * The second part is the CONDITIONAL test. Each time we loop, we perform this test, and if it is false, we stop.
+       * And the third part is where we INCREMENT the counter. This happensonce per loop, after all the statements in the BODY.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+   
+
+
+
+                
+
+
+
+
+
+
+
+          
 
 
 
