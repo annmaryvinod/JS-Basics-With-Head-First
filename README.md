@@ -308,6 +308,99 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
                 };
         6. Now you’ve got a live object complete with a set of properties. And you’ve assigned your object to a variable that you can use to access and change its properties.  
 
+        7. Notice that if you use a string with a space in it for a property name, you need to use quotes around the name.
+               Eg ; var widget = {
+                    cost$: 3.14,
+                    "on sale": true
+                     };
+
+        8. No two properties in an object can have the same name.
+        9. Separate each property name and value pair with a comma:
+        10. Don’t use a comma after the last property value. 
+
+
+
+14. How to access a property:
+ * DOT notation : start with the object name, follow it with a period (otherwise known as a “dot”) and then use the property name.
+       Eg : fiat.mileage
+
+
+ * Dot Notation .
+     ● Dot notation (.) gives you access to an object’s properties.
+     ● For example, fiat.color is a property in fiat with the name color and the value “Medium Blue”. 
+
+15. How to change a property? 
+   * assign the property to a new value
+     Eg : fiat.mileage = 10000;
+
+
+16. How to add new properties?
+     * just specify the new property and give it a value.
+     * eg; fiat.needsWashing = true;
+      <!-- As long as the property doesn’t already exist in the object, it’s added to the object. Otherwise, the property with this name is updated. -->
+
+17.  How to compute with properties?
+   * You can use an object’s property just like you use a variable, except you need to use dot notation to access the property in the object.
+   *  Eg ;    if (fiat.year < 1965) {
+               classic = true;
+               }
+               for (var i = 0; i < fiat.passengers; i++) {
+                   addPersonToCar(); 
+                   }
+
+18. How to delete a property?
+    * Use the keyword delete :  'delete fido.dogYears;'
+    * When you delete a property, you’re not just deleting the value of the property, you’re deleting the property itself. And, if you try to use fido.dogYears after
+    deleting it, it will evaluate to undefined.The delete expression returns true if the property was deleted successfully. delete will return false only if it can’t delete
+    a property (which could happen for, say, a protected object that belongs to the browser). It will return true even if the property you’re trying to delete doesn’t exist in the object.
+
+19. An important note:
+   * Variables don’t actually hold objects.
+   * Instead they hold a reference to an object.
+   * The reference is like a pointer or an address to the actual object.
+   * In other words, a variable doesn’t hold the object itself, but it holds something like a pointer. And, in JavaScript we don’t really know what is inside a
+   reference variable. We do know that whatever it is, it points to our object.
+    * When we use dot notation, the JavaScript interpreter takes care of using the reference to get the object and then accesses its properties for us.
+
+20. NOTE ;if you change a property of the object in a function, you’re changing the property in the original object. So any changes you make to the object inside a function 
+will still be there when the function completes.
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+    
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
       
                              
 
