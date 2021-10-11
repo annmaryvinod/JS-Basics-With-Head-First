@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Object Behaviour 1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Adding a Method!</h1>
+    
+    <script>
+        var fiat = {
+            make: "Fiat",
+            model: "500",
+            year: 1957,
+            color: "Medium Blue",
+            passengers: 2,
+            convertible: false,
+            mileage: 88000,
+            started : false,
+            start : function(){
+                started  = true;
+            },
+            stop : function(){
+                started = false;
+            },
+
+            // The "start" and "stop" methods set the "started" property to true and false respectively
+
+            drive: function () {
+                if(started){
+                alert("Zoom zoom!");
+            } else{
+                alert("Please start your engine first!")
+            }
+            },
+           
+
+        };
+    //   Calling the method!
+
+//     First, we’ll try to drive the car, which should give us a message to start the car. Then we’ll start it for real, and we’ll drive it. Finally, when we're done we'll stop the car.
+
+ 
+fiat.drive();
+
+// We see this does not work. Check the console and you will find : "Uncaught ReferenceError: started is not defined at Object.drive (carWithDrive 1.html:32) at carWithDrive 1.html:46"
+
+
+/*Why does this happen?
+    1. JS could not identify which object's property is being talked about i.e it does not realise the "started" as the property of  the "fiat" object */
+
+    
+// Here we might need to use the "THIS" keyword to specify the object! Check the "carWithDrive2.html" file!
+
+    
+    
+    </script>
+</body>
+
+</html>

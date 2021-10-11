@@ -36,9 +36,9 @@ Learning JS with Head First!
 
 <!-- NOTES -->
 
-NOTE 1 ; JavaScript, unlike HTML markup, is case sensitive, meaning upper- and lowercase matters. The variable counter is different from the variable Counter. 
+NOTE 1 ; JavaScript, unlike HTML markup, is case sensitive, meaning upper- and lowercase matters. The variable "counter" is different from the variable "Counter". 
 
-NOTE 2; Did you notice that the = operator is used in assignments,while the == operator tests for equality? That is, we use one equal sign to assign values to variables. We use two equal signs to test if two values are equal to each other. Substituting one for the other is a common coding mistake.
+NOTE 2; Did you notice that the "=" operator is used in assignments,while the" ==" operator tests for equality? That is, we use one equal sign to assign values to variables. We use two equal signs to test if two values are equal to each other. Substituting one for the other is a common coding mistake.
 === stands for exactly equal to.
 
 4. WHILE loop
@@ -117,7 +117,7 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
 
             eg ; "function bark(name, weight) {}"
             
-                      <!--Here name and weight are the parameters! -->
+        <!--Here name and weight are the parameters! -->
 
     * The browser executes the code within the function only when it is called!
                   <!-- How To Call a Function ? -->
@@ -248,7 +248,7 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
 
    9. How to find or get the last item of an array?
          
-         * Eg ;  var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+         * Eg ;  var products = ["Choo Choo Chocolate", "Icy Mint",  "Cake Batter", "Bubblegum"];
          <!-- To find the last item follow : -->
                var last = products.length - 1;
                var recent = products[last];
@@ -364,7 +364,45 @@ NOTE 2; Did you notice that the = operator is used in assignments,while the == o
 
 20. NOTE ;if you change a property of the object in a function, you’re changing the property in the original object. So any changes you make to the object inside a function 
 will still be there when the function completes.
+
+21. How to add behavior to your objects :
+
+    1.    * Eg ;
+        var fiat = {
+ make: "Fiat",
+ model: "500",
+ year: 1957,
+ color: "Medium Blue",
+ passengers: 2,
+ convertible: false,
+ mileage: 88000,
+ drive: function() {
+ alert("Zoom zoom!");
+ }
+};
  
+ * <!-- Here, the property "drive" is a method(function on an object). -->
+ * <!-- The function is not given a name in it's declartion because the name of the property is the name of the function i.e the name of the function here is "drive" itself. -->
+
+    2. How to call this method?
+      * syntax : objectname.methodname();
+      * Eg ; fiat.drive();
+
+    3. NOTE: You can pass arguments to methods, just like you can to regular functions.
+    4. An object has both state and behavior. State can affect behavior, and behavior can affect state.
+
+ 
+
+22. THIS keyword
+    * You can think of this like a variable that is assigned to the object whose method was just called.
+    * The real key to understanding this is that whenever a method is called, in the body of that method you can count on this to be assigned to the object whose method was called.
+
+23. Visit pdf page number 249 to learn about all the properties in object and to access any method or property.    
+
+
+
+
+
 
   
 
