@@ -445,6 +445,101 @@ will still be there when the function completes.
        4. Note if the attribute doesn’t exist a new one will be created in the element.
 
        5. setAttribute does not require an = 
+30. Null and undefined :
+    
+    * null : null is intended to represent an object that isn’t there.
+    * undefined : it stands for something that is not initialized yet.
+
+31. NaN : Not a Number
+
+   *  represent numeric results that, well, can’t be represented {0/0}
+   * NaN is not equal to NaN!
+32. Test for NaN
+   
+   * NaN isn’t equal to anything, not even itself, so, any kind of test for equality with NaN is off the table.
+    i.e you cannot use 
+    > if (myNum == NaN) {
+    >myNum = 0;
+     }   
+     <!-- THIS WOULD NOT WORK! -->
+
+     * So we use "isNaN" to test for NaN
+
+     * if (isNaN(myNum)) {
+       myNum = 0;
+       }
+
+33. The equality operator (==);
+    
+    * How does it operate ?
+      1. First it checks if both the values are of same type and then compare.
+
+      2. If they are of different types then it converts them to same type and then compare.
+        It is here we get "true' for 99 ="99".
+
+      3. When we compare a string and a number like 99 ="Star", "Star" is converted to a number that is NaN.  
+         * Since NaN is not equal to anything this gives back "false".
+         * Note ; An empty string like "" is converted to 0 not NaN.
+ 
+      4. When we compare a number and a boolean, {true is 1 and false is 0} and the comparison proceeds.
+
+      5. null == undefined {TRUE}
+
+34. The Strict Equality Operator: ===
+    * Two values are strictly equal only if they have the same type and the same value.
+
+35. We use the same equality rules for comparing say, a boolean and a number with < and >, like 0 < true.  
+
+36. For comparison between strings' rules follow “Unicode” on Google.
+
+37. Other Cases:
+   
+   1. Concatenate : var addi = 3 + "4";    Gives "34'
+   2. Conversion happens for :
+         * var multi = 3 * "4"; Gives 12(number not string)
+
+         * var divi = 80 / "10"; Gives 8 (number not string)
+
+         * var mini = "10" - 5; Gives 5 (number not string)
+
+   3. Conclusion : Addition results in concatenation while other three operations result in conversion to number when string and number are involved.     
+
+   4. If you want to avoid concatenation bn string and number during addition use the keyword "Number" :
+       * Eg ; var num = 3 + Number(5); 
+
+       <!-- Remember that the N in 'Number' is capitalised! -->
+
+
+
+38. Difference between NaN and Infinity
+
+   * Infinity refers to an extremely large number but NaN represents a value that cannot be represented as a number.
+   * Infinity - 1 gives 'Infinity'.
+   * 0/ 0 is NaN
+   * 5/0 , 3/0 etc gives 'Infinity'  {Just use the logic of LIMITS in maths}
+   * Infinity - Infinity gives 'NaN'.
+
+39. When we deal with equality of objects == and === mean the same.
+
+40. Truthy and Falsey in JS;
+
+  * They are the values that are not precisely true or false but can behave as true or false in a conditional.
+  * Five things are always falsey in JS all others except false are truthy.
+  * A string with atleast one space is truthy itself! ' ' .
+
+  * The 5 falsey things are :
+    1. null
+    2. undefined
+    3. '' (empty string)
+    4.  0
+    5. NaN
+
+
+
+       
+
+
+
 
 
 
