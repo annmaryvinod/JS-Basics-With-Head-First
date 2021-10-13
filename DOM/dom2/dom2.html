@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Planets</title>
+    <script>
+        function init() {
+            var planet = document.getElementById("greenplanet");
+            planet.innerHTML = "Red Alert: hit by phaser fire!";
+        }
+        window.onload = init;
+
+    </script>
+</head>
+
+<body>
+    <h1>Green Planet</h1>
+    <p id="greenplanet">All is well</p>
+    <h1>Red Planet</h1>
+    <p id="redplanet">Nothing to report</p>
+    <h1>Blue Planet</h1>
+    <p id="blueplanet">All systems A-OK</p>
+</body>
+
+</html>
+
+
+
+
+<!-- Notes! -->
+
+<!-- 1. First, create a function named init and put your existing code in the function. -->
+<!-- 2. You can call this function anything you want, but it’s often called init by convention -->
+<!-- 3. The code we had before, is now in the body of the init function. -->
+<!-- 4. In the we’re assigning the function init to the "window.onload" property. Make sure you don't use parentheses after the function name! We're not calling the function;
+     we're just assigning the function value to the window.onload property. -->
+<!-- The window object will call any function you’ve assigned to its onload property, but only after the page is fully loaded.  -->

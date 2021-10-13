@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Planets</title>
+    
+    <script>
+        var planet = document.getElementById("greenplanet");
+        planet.innerHTML = "Red Alert: hit by phaser fire!";
+    </script>
+</head>
+
+<body>
+    <h1>Green Planet</h1>
+   <p id="greenplanet">All is well</p>
+    <h1>Red Planet</h1>
+    <p id="redplanet">Nothing to report</p>
+    <h1>Blue Planet</h1>
+    <p id="blueplanet">All systems A-OK</p>
+</body>
+
+</html>
+
+
+
+
+<!-- Intention was to change the content inside the <p> tag with the id "greenplanet". -->
+<!-- But since we put the script for this change inside the <head> tag, it is not working. This is because the script is loaded before the page. -->
+<!--To tackle this problem you need to tell the browser to load the script once the page is loaded.  -->
+<!-- This can be done by putting the script at the end of the <body> tag! -->
+    <!-- Another method is to go for the "onload" property of the "window" object! {Check "dom2.html"} -->

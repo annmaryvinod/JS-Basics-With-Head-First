@@ -91,7 +91,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
          
          guess = prompt("Ready, aim, fire! (enter a number from 0-6):"); 
 
-         <!-- prompt is followed by  a string that appears as an instruction !-->
+    <!-- prompt is followed by  a string that appears as an instruction !-->
 
 7. Math.random function ;
      * Math.random is part of standard JavaScript and returns a random number.
@@ -132,7 +132,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
     * You can pass pretty much any JavaScript value as an argument, like a string, a boolean, or a number.
               <!-- Eg; saveMyProfile("krissy", 1991, 3.81, false); -->
 
-              <!-- Remember : So you’ll only define your parameters once, but you’ll probably call your function with many different arguments.-->
+        <!-- Remember : So you’ll only define your parameters once, but you’ll probably call your function with many different arguments.-->
 
      "console.log"  and "alert" are built in functions. 
          So all the string arguments to alert and console.log are also arguments!
@@ -184,7 +184,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
                               If you use a variable without declaring it first, that variable will be global. That means that even if you use a variable for the first time inside a function
                               (because you meant for it to be local), the variable will actually be global, and be available outside the function too (which might cause confusion later). So, don’t forget to declare your locals!
 
-                              <!-- DECLARE MEANS TO USE THE var KEYWORD! -->
+                <!-- DECLARE MEANS TO USE THE var KEYWORD! -->
                                          
 
                                          function playTurn(player, location) {
@@ -260,7 +260,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
        * In the parentheses, there are three parts. The first part is the loop
        variable INITIALIZATION.This initialization happens only once, before the for loop starts.   
        * The second part is the CONDITIONAL test. Each time we loop, we perform this test, and if it is false, we stop.
-       * And the third part is where we INCREMENT the counter. This happensonce per loop, after all the statements in the BODY.
+       * And the third part is where we INCREMENT the counter. This happens once per loop, after all the statements in the BODY.
 
 12. Methods of creating an array:
       * Create a variable and assign it an array to which you literally type the items.
@@ -281,7 +281,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
               myArray = [243524 , "doggy" , 565655] 
               It follows the order as index!-->
 
-       * Using the new Array
+       * Using the "new Array"
 
          1. Eg ;   var myarray = new Array(3);
             * This creates a new array, with three empty spots in it (that is, an array with length 3, but no values yet). Then you can fill them, just like you normally would,
@@ -397,7 +397,64 @@ will still be there when the function completes.
     * You can think of this like a variable that is assigned to the object whose method was just called.
     * The real key to understanding this is that whenever a method is called, in the body of that method you can count on this to be assigned to the object whose method was called.
 
-23. Visit pdf page number 249 to learn about all the properties in object and to access any method or property.    
+23. Visit pdf page number 249 to learn about all the properties in object and to access any method or property. 
+
+      * How to get the properties of an object?
+          1. Use : for in
+
+             * Eg ;
+                        var fiat = {
+                        make: "Fiat",
+                        model: "500",
+                        year: 1957,
+                        color: "Medium Blue",
+                        passengers: 2,
+                        convertible: false,
+                        mileage: 88000,
+                        drive: function() {
+                        alert("Zoom zoom!");
+                      }
+                };
+
+    * To access all the properties ;
+         1. for (var prop in fiat){
+           console.log(prop + ":" + fiat[prop]);
+        }
+
+         2. You may use any name for the variable instead of prop.
+                 
+24. Read in detail about DOM on chapter 6.
+25. .getElementById gets the element only not the content inside the element.
+    Use the .getElementById within a variable so that it is easier to call it later in the JS code.
+26. .innerHTML can be used to read, change the content etc.
+27. .getElementById and .innerHTML are methods of the "document" object.
+
+28. Read through and test the DOM folder completely.
+
+29. .setAttribute can be used to set or change or add a new attribute like a class, id etc to an object element.
+
+    *  syntax EG ; planet.setAttribute("class", "redtext");
+
+      1. We take our element object.
+
+      2. And we use its setAttribute method to either add a new attribute or change an existing attribute.
+      
+      3. The method takes two arguments, the name of the attribute you want to set or change and the value you'd like to set that attribute to.
+      {Here the method is .setAttribute and "class" and "redtext" are arguments.}
+
+       4. Note if the attribute doesn’t exist a new one will be created in the element.
+
+       5. setAttribute does not require an = 
+
+
+
+
+ 
+     
+
+
+
+
 
 
 
