@@ -273,9 +273,9 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
       * Create an empty array and use "push" 
 
            Eg; var myArray = [];
-                myArray.push = 243524;
-                myArray.push ="doggy";
-                myArray.push =565655;
+                myArray.push(243524);
+                myArray.push("doggy");
+                myArray.push(565655);
 
    <!-- Here the array looks like :
               myArray = [243524 , "doggy" , 565655] 
@@ -396,6 +396,7 @@ will still be there when the function completes.
 22. THIS keyword
     * You can think of this like a variable that is assigned to the object whose method was just called.
     * The real key to understanding this is that whenever a method is called, in the body of that method you can count on this to be assigned to the object whose method was called.
+    * THIS points to the OBJECT.
 
 23. Visit pdf page number 249 to learn about all the properties in object and to access any method or property. 
 
@@ -416,7 +417,7 @@ will still be there when the function completes.
                       }
                 };
 
-    * To access all the properties ;
+    * To access all the properties ; " for in"
          1. for (var prop in fiat){
            console.log(prop + ":" + fiat[prop]);
         }
@@ -454,6 +455,7 @@ will still be there when the function completes.
 
    *  represent numeric results that, well, can’t be represented {0/0}
    * NaN is not equal to NaN!
+
 32. Test for NaN
    
    * NaN isn’t equal to anything, not even itself, so, any kind of test for equality with NaN is off the table.
@@ -533,6 +535,110 @@ will still be there when the function completes.
     3. '' (empty string)
     4.  0
     5. NaN
+
+
+41. UNDEFINED
+
+   * I get returned from a function when there is no return statement.
+
+   * I’m the value of a variable when I haven’t been assigned a value.
+
+   * I’m the value of an array item that doesn’t exist in a sparse array.
+   
+   *  I’m the value of a property that doesn’t exist.
+   
+   *  I’m the value of a property that’s been deleted.
+
+ 42. How to check for undefined : Compare
+
+    1.   Eg :  var x;
+                if (x == undefined) {
+                   <!-- x isn’t defined! just deal with it! -->
+                  }
+    2.  Eg ; var customer = {
+               name: "Jenny"
+               };
+            if (customer.phoneNumber == undefined) {
+              <!-- get the customer's phone number -->
+           }
+
+43. Some common string methods :
+
+    1. length property
+       * var input = "jenny@wickedlysmart.com";
+       * input.length
+
+    2. charAt method : 
+       * To get the character at a particular index in the string. 
+       * input.charAt(i) == ....
+
+    3. indexOf method :
+        
+        * Eg ;  var phrase = "the cat in the hat";
+        * var index = phrase.indexOf("cat");
+        <!-- Here we get the index of "c" that is the first letter in the word "cat". -->
+
+    4.  substring method :
+        
+        * Give the substring method two indices, and it will extract and return the string contained within them.
+
+        * Eg 1 : var data = "name|phone|address";
+                 var val = data.substring(5, 10);
+                 console.log("Substring is " + val);
+
+            * <!-- Here we get "Substring is phone" -->
+            * <!--We'd like the string from index 5 and up to (but not including) 10 returned. We get back a new string with the characters from index 5 to 10. -->
+
+        * You can omit the second index and substring will extract a string that starts at the first index and then continues until the end of the original string.    
+
+    5. split method :
+       
+       * The split method takes a character that acts as a delimiter, and breaks the string into parts based on the delimiter.
+
+       * Split uses the delimiter to break the original string into pieces, which are returned in an array. AN ARRAY IS RETURNED!
+
+       * var data = "name|phone|address";
+          var vals = data.split("|");
+         console.log("Split array is ", vals);
+
+         <!-- Here we get "Split array is ["name", "phone", "address"] " -->
+         <!-- Look at the console argument the split array is seperated from string with a comma. Concatenation will not give us an array! -->
+
+       * Read through pdf page number 339.
+
+    6. See pdf pg 340.
+
+
+44. Types in JS ; 
+
+    * There are two types in JS : 1. primitives and 2. objects 
+
+    * The primitives are: numbers, strings, booleans, null and undefined. Everything else is an object.
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
 
 
 
