@@ -241,7 +241,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
     
     8. How big is that array anyway? : 
         * Here we use the length property : Eg ; "var numFlavors = flavors.length;"
-             <!-- This gives us the lenght i.e the number of items present!-->
+             <!-- This gives us the length i.e the number of items present!-->
 
         * Notice that because we start numbering the indices of the array at 0, the length of the array will always be one more than the last index.
 
@@ -516,6 +516,7 @@ will still be there when the function completes.
 38. Difference between NaN and Infinity
 
    * Infinity refers to an extremely large number but NaN represents a value that cannot be represented as a number.
+   * - Infinity represents an extremely small number.
    * Infinity - 1 gives 'Infinity'.
    * 0/ 0 is NaN
    * 5/0 , 3/0 etc gives 'Infinity'  {Just use the logic of LIMITS in maths}
