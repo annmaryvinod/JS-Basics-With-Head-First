@@ -617,6 +617,14 @@ will still be there when the function completes.
     * The primitives are: numbers, strings, booleans, null and undefined. Everything else is an object.
 
 
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+   NOTES FROM BATTLESHIP GAME MAKING:
+
+1. From HTML
+   * To make tables in html use the <table></table> tag.
+   * <tr> stands for each row and <td> deals with the content in it.
+   
 
 
 
