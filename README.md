@@ -623,6 +623,28 @@ will still be there when the function completes.
 
     * The primitives are: numbers, strings, booleans, null and undefined. Everything else is an object.
 
+45. DOM Notes
+
+ * A property is a value that you can get or set (like changing the content of an HTML element).
+ * A method is an action you can do (like add or deleting an HTML element).
+ * For a method we fill in the argumnets.
+ * For a property we assign the values.
+
+* METHODS :
+   1. document.getElementById(id)   : Find an element by element id
+   2. document.getElementsByTagName(name)  : Find elements by tag name
+   3. document.getElementsByClassName(name)  : Find elements by class name
+   4. element.setAttribute(attribute, value)  :	Change the attribute value of an HTML element
+
+
+Refer w3schools
+
+
+* PROPERTY :
+  1. element.innerHTML =  new html content
+  2.  element.attribute = new value
+  3. element.style.property = new style
+
 
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
