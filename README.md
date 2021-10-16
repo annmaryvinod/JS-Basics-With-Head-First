@@ -646,6 +646,11 @@ Refer w3schools
   3. element.style.property = new style
 
 
+* Extra
+
+  1. document.querySelectorAll("p.intro");  "This gets all <p> with the class name 'intro' as an array.
+
+
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
    NOTES FROM BATTLESHIP GAME MAKING:
