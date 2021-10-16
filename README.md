@@ -427,8 +427,12 @@ will still be there when the function completes.
 24. Read in detail about DOM on chapter 6.
 25. .getElementById gets the element only not the content inside the element.
     Use the .getElementById within a variable so that it is easier to call it later in the JS code.
-26. .innerHTML can be used to read, change the content etc.
+26. .innerHTML can be used to read, change the content etc. It can be used to change the tag as well as the content inside.
 27. .getElementById and .innerHTML are methods of the "document" object.
+
+* Added
+1. .innerHTML can change the content as well as the tag.
+2. .textContent can change only the content not the tag.
 
 28. Read through and test the DOM folder completely.
     * A point on DOM:
