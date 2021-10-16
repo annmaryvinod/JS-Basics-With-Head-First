@@ -431,6 +431,9 @@ will still be there when the function completes.
 27. .getElementById and .innerHTML are methods of the "document" object.
 
 28. Read through and test the DOM folder completely.
+    * A point on DOM:
+     1. in case of getElementById we get back the asked thing only.
+     2. in case we use "Elements" as in getElementaByClassName etc we get back an array.
 
 29. .setAttribute can be used to set or change or add a new attribute like a class, id etc to an object element.
 
@@ -477,9 +480,9 @@ will still be there when the function completes.
       1. First it checks if both the values are of same type and then compare.
 
       2. If they are of different types then it converts them to same type and then compare.
-        It is here we get "true' for 99 ="99".
+        It is here we get "true' for 99 =="99".
 
-      3. When we compare a string and a number like 99 ="Star", "Star" is converted to a number that is NaN.  
+      3. When we compare a string and a number like 99 =="Star", "Star" is converted to a number that is NaN.  
          * Since NaN is not equal to anything this gives back "false".
          * Note ; An empty string like "" is converted to 0 not NaN.
  
