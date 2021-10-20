@@ -147,3 +147,19 @@ var controller = {
 // controller.processGuess("B1");
 // controller.processGuess("B2");
 
+// eventhandler for the fire button and form
+
+function init() {
+  var fireButton = document.getElementById("fireButton");
+  fireButton.onclick = handleFireButton;
+}
+
+// the handleFireButton works only when the fire button is clicked:
+function handleFireButton() {
+  var guessInput = document.getElementById("guessInput");
+  var guess = guessInput.value;
+  controller.processGuess(guess);
+  guessInput.value = "";
+}
+window.onload = init;
+// Now you may test on the actual game

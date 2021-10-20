@@ -651,6 +651,9 @@ Refer w3schools
   1. document.querySelectorAll("p.intro");  "This gets all <p> with the class name 'intro' as an array.
 
 
+46. "switch" statements in JS can be used instead of the "if" ,"else" statements  
+
+
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
    NOTES FROM BATTLESHIP GAME MAKING:
