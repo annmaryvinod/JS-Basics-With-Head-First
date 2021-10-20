@@ -658,7 +658,9 @@ Refer w3schools
 1. From HTML
    * To make tables in html use the <table></table> tag.
    * <tr> stands for each row and <td> deals with the content in it.
-   
+
+
+2. Take a look at how chaining works on page 385(pdf).   
 
 
 
