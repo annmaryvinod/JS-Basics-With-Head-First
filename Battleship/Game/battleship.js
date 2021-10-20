@@ -16,13 +16,13 @@ var view = {
 };
 // Here we set the class attribute as "hit" or "miss" as per the location
 
-view.displayMiss("00");
-view.displayHit("34");
-view.displayMiss("55");
-view.displayHit("12");
-view.displayMiss("25");
-view.displayHit("26");
-view.displayMessage("Tap tap, is this thing on?");
+// view.displayMiss("00");
+// view.displayHit("34");
+// view.displayMiss("55");
+// view.displayHit("12");
+// view.displayMiss("25");
+// view.displayHit("26");
+// view.displayMessage("Tap tap, is this thing on?");
 
 // The Model
 
