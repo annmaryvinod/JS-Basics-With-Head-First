@@ -627,7 +627,7 @@ will still be there when the function completes.
 
  * A property is a value that you can get or set (like changing the content of an HTML element).
  * A method is an action you can do (like add or deleting an HTML element).
- * For a method we fill in the argumnets.
+ * For a method we fill in the arguments.
  * For a property we assign the values.
 
 * METHODS :
