@@ -150,3 +150,18 @@ var controller = {
 // controller.processGuess("B1");
 // controller.processGuess("B2");
 
+// Eventhandler
+
+function init() {
+  var fireButton = document.getElementById("fireButton");
+  fireButton.onclick = handleFireButton;
+}
+function handleFireButton() {
+  var guessInput = document.getElementById("guessInput");
+  var guess = guessInput.value;
+
+
+// To delete the previous input 
+  guessInput.value = "";
+}
+window.onload = init;
