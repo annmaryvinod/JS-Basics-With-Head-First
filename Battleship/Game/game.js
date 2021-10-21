@@ -7,13 +7,24 @@ var view = {
   },
 
   displayHit: function (location) {
-    var cell = document.getElementById("location");
+    var cell = document.getElementById(location);
     cell.setAttribute("class", "hit");
   },
 
   displayMiss: function (location) {
-    var cell = document.getElementById("location");
+    var cell = document.getElementById(location);
     cell.setAttribute("class", "miss");
   }
 };
+
+// Test for Hit & Miss + displayMessage
+
+// view.displayMiss("00");
+// view.displayMiss("55");
+// view.displayMiss("25");
+// view.displayHit("34");
+// view.displayHit("26");
+// view.displayHit("12");
+
+// view.displayMessage("Tap tap, is this thing working!")
 
