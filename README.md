@@ -660,6 +660,13 @@ Refer w3schools
             console.log(r);
         }
 
+48. Arrow Functions
+
+* Used to represent anonymous function
+
+* Syntax : " variable = () => "value to be returned without the return statement" "
+
+
 
 
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
