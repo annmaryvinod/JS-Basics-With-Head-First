@@ -67,6 +67,15 @@ var model = {
     }
     return true;
   },
+  generateShipLocations: function () {
+    var locations;
+    for (var i = 0; i < this.numShips; i++) {
+      do {
+        locations = this.generateShip();
+      } while (this.collision(locations));
+      this.ships[i].locations = locations;
+    }
+  }
 };
 
 // Test for model
@@ -119,7 +128,7 @@ function parseGuess(guess) {
 // console.log(parseGuess("H0"));
 // console.log(parseGuess("A7"));
 
-// Contoller
+// Controller
 
 var controller = {
   guesses: 0,
@@ -155,13 +164,20 @@ var controller = {
 function init() {
   var fireButton = document.getElementById("fireButton");
   fireButton.onclick = handleFireButton;
+  var guessInput = document.getElementById("guessInput");
+  guessInput.onkeypress = handleKeyPress;
+}
+function handleKeyPress(e) {
+  var fireButton = document.getElementById("fireButton");
+  if (e.keyCode === 13) {
+    fireButton.click();
+    return false;
+  }
 }
 function handleFireButton() {
   var guessInput = document.getElementById("guessInput");
   var guess = guessInput.value;
-
-
-// To delete the previous input 
+  // To delete the previous input
   guessInput.value = "";
 }
 window.onload = init;
