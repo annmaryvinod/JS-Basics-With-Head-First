@@ -82,14 +82,9 @@ var model = {
 // model.fire("11");
 // model.fire("10");
 
-
-
-
 // Controller : gets the guess and controls
- 
 
 // parseGuess serves as a helper function for "controller" : it checks the validity of the guess
-
 
 function parseGuess(guess) {
   var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
@@ -124,4 +119,34 @@ function parseGuess(guess) {
 // console.log(parseGuess("H0"));
 // console.log(parseGuess("A7"));
 
+// Contoller
+
+var controller = {
+  guesses: 0,
+  processGuess: function (guess) {
+    var location = parseGuess(guess);
+    if (location) {
+      this.guesses++;
+      var hit = model.fire(location);
+      if (hit && model.shipsSunk === model.numShips) {
+        view.displayMessage(
+          "You sank all my battleships, in " + this.guesses + " guesses"
+        );
+      }
+    }
+  },
+};
+
+// Test controller
+
+// controller.processGuess("A0");
+// controller.processGuess("A6");
+// controller.processGuess("B6");
+// controller.processGuess("C6");
+// controller.processGuess("C4");
+// controller.processGuess("D4");
+// controller.processGuess("E4");
+// controller.processGuess("B0");
+// controller.processGuess("B1");
+// controller.processGuess("B2");
 
