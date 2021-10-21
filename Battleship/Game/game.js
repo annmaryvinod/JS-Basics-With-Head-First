@@ -14,7 +14,7 @@ var view = {
   displayMiss: function (location) {
     var cell = document.getElementById(location);
     cell.setAttribute("class", "miss");
-  }
+  },
 };
 
 // Test for Hit & Miss + displayMessage
@@ -26,5 +26,29 @@ var view = {
 // view.displayHit("26");
 // view.displayHit("12");
 
-// view.displayMessage("Tap tap, is this thing working!")
+// view.displayMessage("Tap tap, is this thing working!");
 
+// "model" object : keeps the state of the game "location of the ships", "the ship locations that have been hit", and "how many ships have been sunk"
+
+var model = {
+  boardSize: 7,
+  numShips: 3,
+  shipsSunk: 0,
+  shipLength: 3,
+  ships: [
+    { locations: ["06", "16", "26"], hits: ["", "", ""] },
+    { locations: ["24", "34", "44"], hits: ["", "", ""] },
+    { locations: ["10", "11", "12"], hits: ["", "", ""] },
+  ],
+  fire: function (guess) {
+    for (var i = 0; i < this.numShips; i++) {
+      var ship = this.ships[i];
+      var index = ship.locations.indexOf(guess);
+      if (index >= 0) {
+        ship.hits[index] = "hit";
+        return true;
+      }
+    }
+    return false;
+  },
+};
