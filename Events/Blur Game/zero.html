@@ -14,15 +14,26 @@
         }
     </style>
     <script>
-       window.onload = init();
-       function init() {
-           var images = document.getElementsByTagName("img");
-           for (var i = 0 ; i < images.length ; i++){
-               images[i].onclick = showAnswer();
-           }
-       };
+        window.onload = init;
+        function init() {
+            var image = document.getElementById("zero");
+            image.onclick = showAnswer;
+            var images = document.getElementsByTagName("img");
+            for (var i = 0; i < images.length; i++) {
+                images[i].onclick = showAnswer;
+            }
+            function showAnswer(eventObj) {
+                var image = eventObj.target;
+                // target gets the element object that has caused the event
 
-
+                var name = image.id;
+                // the id property gets the id name
+                name = name + ".jpg";
+                // id name + .jpg can result in the unblur image src
+                image.src = name;
+                // finally, we have got the unblur image in!
+            }
+        };
     </script>
 </head>
 
