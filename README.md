@@ -680,3 +680,13 @@ console.log(r);
   function pageLoadedHandler() {
   alert("I'm alive!");
   }
+
+
+51. Extra DOM
+   * methods like "getElementsByTagName" returns a list much like an array not exactly an array.
+
+   * The returned list an "object" called "NodeList".
+
+   * "NodeList" is a collection of Nodes.
+
+   * Nodes are the DOM elements.  
