@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pirates Booty</title>
+
+    <style>
+        body{
+         background-color: darkslategray;
+        }
+        img#map{
+            margin-left: 600px;
+            margin-top: 100px;
+        }
+        p#coords{
+            font-size: 30px;
+            margin-left: 100px;
+        }
+        h1{
+            font-size: 55px;
+            margin-left: 800px;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        window.onload = init;
+        function init() {
+            alert("Move the mouse and catch the coordinates!")
+            var map = document.getElementById("map");
+          map.onmousemove =showCoords;
+        }
+        function showCoords(eventObj) {
+            var coords = document.getElementById("coords");
+            var x = eventObj.clientX;
+            var y = eventObj.clientY;
+            // clientX and clientY determines the x and y coordinates
+            coords.innerHTML = "Map coordinates: "
+                + x + ", " + y;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Treasure Hunt</h1>
+    <img id="map" src="map.jpg">
+    <p id="coords">Move mouse to find coordinates...</p>
+</body>
+
+</html>
+
+
+
