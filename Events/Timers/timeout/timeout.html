@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Pirates Booty</title>
+ <style>
+     p{
+         font-size: 50px;
+         color: floralwhite;
+         margin-left: 800px;
+         margin-top: 300px;
+     }
+ </style>
+ <script>
+// If you want your code to wait some time before something happens.
+function timerHandler(){
+    alert("Hey,what are you doing just sitting there staring at the blank screen!")
+}
+
+setTimeout(timerHandler,5000);
+// Unlike "onload", "onclick" etc. "setTimeOut" is a  method.
+function promptFunc() {
+    prompt("Enter your number code!");
+}
+setTimeout(promptFunc,7000);
+
+function getThief() {
+    document.body.style.backgroundColor = "black";
+}
+setTimeout(getThief,8000);
+
+
+ </script>
+</head>
+<body>
+<p>Error!</p>
+</body>
+</html>
