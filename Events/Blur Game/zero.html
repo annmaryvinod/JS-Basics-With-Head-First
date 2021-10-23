@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 20px;
-            background-color:black;
+            background-color: black;
         }
 
         img {
@@ -33,6 +33,17 @@
                 // id name + .jpg can result in the unblur image src
                 image.src = name;
                 // finally, we have got the unblur image in!
+
+
+                setTimeout(reblur, 2000, image);
+                // handler that executes "reblur"
+
+            }
+            function reblur(image) {
+                var name = image.id;
+                name = name + "blur.jpg";
+                // changing back to blur
+                image.src = name;
             }
         };
     </script>
