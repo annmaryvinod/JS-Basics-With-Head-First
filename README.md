@@ -718,9 +718,20 @@ fly(3);
 Also check page number 505.
 
 
-54. functions in JavaScript are values—values that can be
-assigned to variables. And you know that with values of other types, like
-numbers, booleans, strings and even objects, we can do all sorts of things with
-those values, like pass them to functions, return them from functions or even
-store them in objects or arrays
+54. functions in JavaScript are values—
+ * values that can be assigned to variables. And you know that with values of other types, like numbers, booleans, strings and even objects, we can do all sorts of things with those values, like pass them to functions, return them from functions
+ or even store them in objects or arrays.
+
+ * Such values are called "first-class values".
+
+ * First class: a value that can be treated like any other
+value in a programming language, including the
+ability to be assigned to a variable, passed as an
+argument, and returned from a function.
+
+
+
+
+ 
+
 
