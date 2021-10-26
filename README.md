@@ -12,6 +12,7 @@ Learning JS with Head First!
 
     - Declaration:
       <!-- Semicolon is important at the end of a statement! --> 1. var variable name = value;
+
       eg; var myAge = 20;
       var myName = "Ann";
       var isEligible = true;
@@ -95,7 +96,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
 
     - Math.random is part of standard JavaScript and returns a random number.
     - The only problem is it returns numbers like 0.128, 0.830, 0.9, 0.42.
-      These numbers are between 0 and 1 (not including exactly 1).  
+      These numbers are between 0 and 1 (not including exactly 1).
        <!-- NOTE THE POINT : it does not include 1.
                                       If you want a number between 0-4 just multiply the Math.random func with 5
                                        If you want to return an integer just nest the Math.random func inside a Math.floor func!
@@ -108,11 +109,11 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
 
            eg ; "function bark(name, weight) {}"
 
-
        <!--Here name and weight are the parameters! -->
 
     - The browser executes the code within the function only when it is called!
       <!-- How To Call a Function ? --> \* To call, or invoke, a function, just use its name, followed by an open parenthesis,then any values you need to pass it,
+
       separated by commas, and finally a closing parenthesis. The values in the parentheses are arguments.
 
                    * When we call the function,the arguments are assigned to the parameter names.
@@ -190,10 +191,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
         <!-- Here points is a global variable though it is inside a function. It can be used outside this function also.
               REASON : points is not declared within the function as "var points;" -->
 
-      - What happens when I name a local variable the same thing as an existing global variable?
-               1. You “shadow” your global.
-               2. Any references to the variable within the function refer to the local variable and not the global.
-               3. So we say the global variable is in the shadow of the local variable (in other words we can’t see the global variable because the local version is in our way).
+      - What happens when I name a local variable the same thing as an existing global variable? 1. You “shadow” your global. 2. Any references to the variable within the function refer to the local variable and not the global. 3. So we say the global variable is in the shadow of the local variable (in other words we can’t see the global variable because the local version is in our way).
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -208,31 +206,30 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
 
 4.  Arrays:
 
-    1. An array is a JavaScript type that can hold many values.
-    2. How to create an array :
+    1.  An array is a JavaScript type that can hold many values.
+    2.  How to create an array :
 
-
-        * EG:
-              var flavors = ["vanilla", "butterscotch", "lavender", "chocolate", "cookie dough"];
+        - EG:
+          var flavors = ["vanilla", "butterscotch", "lavender", "chocolate", "cookie dough"];
 
               * To begin the array,use the "[" character...
               * And then list each item of the array...
               * Notice that each item in the array is separated by a comma.
               * ... and end the array with the "]" character.
 
-    3. When you create an array, each item is placed at a location, or index, in the array.
-    4. The first item has an index of 0 and next 1 etc.
-    5. The array is assigned to a variable.
-    6. How to access an array item : To access an item just follow the array variable name with an index, surrounded by square brackets.
-    7. Updating a value in the array :
-       Eg; flavors[3] = "vanilla chocolate chip";
+    3.  When you create an array, each item is placed at a location, or index, in the array.
+    4.  The first item has an index of 0 and next 1 etc.
+    5.  The array is assigned to a variable.
+    6.  How to access an array item : To access an item just follow the array variable name with an index, surrounded by square brackets.
+    7.  Updating a value in the array :
+        Eg; flavors[3] = "vanilla chocolate chip";
 
-    8. How big is that array anyway? :
+    8.  How big is that array anyway? :
 
-       - Here we use the length property : Eg ; "var numFlavors = flavors.length;"
-            <!-- This gives us the length i.e the number of items present!-->
+        - Here we use the length property : Eg ; "var numFlavors = flavors.length;"
+             <!-- This gives us the length i.e the number of items present!-->
 
-       - Notice that because we start numbering the indices of the array at 0, the length of the array will always be one more than the last index.
+        - Notice that because we start numbering the indices of the array at 0, the length of the array will always be one more than the last index.
 
 5.  How to find or get the last item of an array?
 
@@ -573,6 +570,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
    };
    if (customer.phoneNumber == undefined) {
    <!-- get the customer's phone number -->
+
    }
 
 1. Some common string methods :
@@ -675,18 +673,42 @@ console.log(r);
 
 50. Events & eventhandlers
 
-* window.onload = "function name";
+- window.onload = "function name";
   Eg ; window.onload = pageLoadedHandler;
   function pageLoadedHandler() {
   alert("I'm alive!");
   }
 
-
 51. Extra DOM
-   * methods like "getElementsByTagName" returns a list much like an array not exactly an array.
 
-   * The returned list an "object" called "NodeList".
+- methods like "getElementsByTagName" returns a list much like an array not exactly an array.
 
-   * "NodeList" is a collection of Nodes.
+- The returned list an "object" called "NodeList".
 
-   * Nodes are the DOM elements.  
+- "NodeList" is a collection of Nodes.
+
+- Nodes are the DOM elements.
+
+52. Liberated Functions
+
+*  Method 1 : function declaration
+
+function quack(num) {
+for (var i = 0; i < num; i++) {
+console.log("Quack!");
+}
+}
+
+
+quack(3);
+
+ * Method 2 : function expression
+
+
+ var fly = function(num) {
+ for (var i = 0; i < num; i++) {
+ console.log("Flying!");
+ }
+};
+
+fly(3);                   
