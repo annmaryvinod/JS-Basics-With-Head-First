@@ -711,4 +711,9 @@ quack(3);
  }
 };
 
-fly(3);                   
+fly(3);   
+
+
+53. The first thing that the browser looks for in a code is the "function declaration". Do refer page number 473.
+Also check page number 505.
+
