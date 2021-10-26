@@ -717,3 +717,10 @@ fly(3);
 53. The first thing that the browser looks for in a code is the "function declaration". Do refer page number 473.
 Also check page number 505.
 
+
+54. functions in JavaScript are values—values that can be
+assigned to variables. And you know that with values of other types, like
+numbers, booleans, strings and even objects, we can do all sorts of things with
+those values, like pass them to functions, return them from functions or even
+store them in objects or arrays
+
