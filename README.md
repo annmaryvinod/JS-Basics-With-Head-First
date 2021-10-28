@@ -732,6 +732,38 @@ argument, and returned from a function.
 55. Functions can be used within the "sort" method for an array.
    Refer page number 500 for an example.
 
+56. Anonymous Function 
+ 1. 
+ * Usual method :
+   function handler() { alert("Yeah, that page loaded!"); }
+   window.onload = handler;
+
+ *  Easy : 
+  window.onload = function() { alert("Yeah, that page loaded!"); };
+
+2.   
+
+ * Usual method :
+  function cookieAlarm() {
+ alert("Time to take the cookies out of the oven");
+}
+setTimeout(cookieAlarm, 600000);
+
+
+*  Easy :  "Please note the syntax here!"
+  
+  setTimeout(function() { alert("Time to take the cookies out of the oven");}, 600000);
+
+
+57. Terms to checkout :
+  1. Hoisting
+  2. Lexical scope (Check page number 528)
+
+
+
+
+
+
 
 
 
