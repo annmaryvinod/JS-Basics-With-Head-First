@@ -729,6 +729,9 @@ value in a programming language, including the
 ability to be assigned to a variable, passed as an
 argument, and returned from a function.
 
+55. Functions can be used within the "sort" method for an array.
+   Refer page number 500 for an example.
+
 
 
 
