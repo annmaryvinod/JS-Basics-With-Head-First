@@ -759,6 +759,15 @@ setTimeout(cookieAlarm, 600000);
   1. Hoisting
   2. Lexical scope (Check page number 528 and 531).
   3. Environment(pg 531).
+  4. Closure : A closure is a function  together with a referencing environment.
+
+   * A closure results when we combine a
+function that has free variables with
+an environment that provides variable
+bindings for all those free variables.
+
+
+  5. Free variables : They are the variables that are neither "locally" declared nor are parameters in a function.
 
 
 
