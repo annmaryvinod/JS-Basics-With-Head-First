@@ -757,7 +757,9 @@ setTimeout(cookieAlarm, 600000);
 
 57. Terms to checkout :
   1. Hoisting
-  2. Lexical scope (Check page number 528)
+  2. Lexical scope (Check page number 528 and 531).
+  3. Environment(pg 531).
+
 
 
 
