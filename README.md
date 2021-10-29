@@ -390,6 +390,9 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
     - The real key to understanding this is that whenever a method is called, in the body of that method you can count on this to be assigned to the object whose method was called.
     - THIS points to the OBJECT.
 
+
+    <!-- check on the use of "switch" , its syntax and the use of "default" within "switch" -->
+
 23. Visit pdf page number 249 to learn about all the properties in object and to access any method or property.
 
     - How to get the properties of an object?
