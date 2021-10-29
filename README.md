@@ -422,7 +422,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
 25. .getElementById gets the element only not the content inside the element.
     Use the .getElementById within a variable so that it is easier to call it later in the JS code.
 26. .innerHTML can be used to read, change the content etc. It can be used to change the tag as well as the content inside.
-27. .getElementById and .innerHTML are methods of the "document" object.
+27. .getElementById is a method of the "document" object.
 
 - Added
 
@@ -682,7 +682,7 @@ console.log(r);
 51. Extra DOM
 
 - methods like "getElementsByTagName" returns a list much like an array not exactly an array.
-
+ 
 - The returned list an "object" called "NodeList".
 
 - "NodeList" is a collection of Nodes.
