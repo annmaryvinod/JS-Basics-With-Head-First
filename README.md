@@ -766,6 +766,8 @@ function that has free variables with
 an environment that provides variable
 bindings for all those free variables.
 
+* The closure concept is used to call a function within a function outside it. See "eg.html".
+
 
   5. Free variables : They are the variables that are neither "locally" declared nor are parameters in a function.
 
