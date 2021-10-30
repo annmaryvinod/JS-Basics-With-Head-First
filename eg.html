@@ -17,40 +17,87 @@
 
 
 // case 1
-    const add = (value) => {
+    // const add = (value) => {
 
-      function sum(name) {
-        return value + "  " + name;
-      }
-      return sum;
+    //   function sum(name) {
+    //     return value + "  " + name;
+    //   }
+    //   return sum;
 
-    };
+    // };
 
-    let a = add("student");
-    console.log(a("haii"));
+    // let a = add("student");
+    // console.log(a("haii"));
 
 // case 2
 
-    const getAdd = (num1) => {
+    // const getAdd = (num1) => {
 
-      function addIt(num2) {
-        return num1 + num2;
-      }
-      return addIt;
+    //   function addIt(num2) {
+    //     return num1 + num2;
+    //   }
+    //   return addIt;
 
-    };
+    // };
 
-    let f = getAdd("melo");
-    console.log(f("dious"));
-
-
+    // let f = getAdd("melo");
+    // console.log(f("dious"));
 
 
+// case 3 a
+
+// function makeFunc() {
+//   var name = 'Mozilla';
+//   function displayName() {
+//     alert(name);
+//   }
+//   return displayName;
+// }
+
+// var myFunc = makeFunc();
+// myFunc();
 
 
 
 
-    //   console.log("outside of function function", n, l);
+// case 3 b
+
+// function makeFunc() {
+//   var name = 'Mozilla';
+//    displayName = () => {
+//     alert(name);
+//   }
+//   displayName();
+// }
+
+// var myFunc = makeFunc();
+// myFunc();
+
+
+
+
+
+
+// case 3 c
+
+function makeFunc() {
+  var newName = 'Mozilla';
+  function name(){
+    return "hello"
+  };
+  return name;
+}
+const myF = makeFunc();
+//  console.log(makeFunc());
+console.log(myF())
+
+
+
+
+
+
+
+
 
 
 
