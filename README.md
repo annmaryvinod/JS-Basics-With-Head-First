@@ -384,7 +384,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
   3. NOTE: You can pass arguments to methods, just like you can to regular functions.
   4. An object has both state and behavior. State can affect behavior, and behavior can affect state.
 
-22. THIS keyword
+22. THIS keyword                                                                                                                
 
     - You can think of this like a variable that is assigned to the object whose method was just called.
     - The real key to understanding this is that whenever a method is called, in the body of that method you can count on this to be assigned to the object whose method was called.
