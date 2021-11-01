@@ -775,6 +775,17 @@ bindings for all those free variables.
   5. Free variables : They are the variables that are neither "locally" declared nor are parameters in a function.
 
 
+58. Hoisting in JS : 
+ * Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+* That is , a JS variable can be used before it is even declared.
+
+
+59. Lexical Scoping : A lexical scope in JavaScript means that a variable defined outside a function can be accessible inside another function defined after the variable declaration. But the opposite is not true; the variables defined inside a function will not be accessible outside that function.
+
+
+
+
+
 
 
 
