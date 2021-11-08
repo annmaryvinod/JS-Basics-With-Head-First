@@ -110,6 +110,11 @@ function counter() {
  return count;
 };
 
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
+
 
 // CASE 2 : THE SAFEST
 // The best way must be implementing the concept of closures 
@@ -122,6 +127,13 @@ function makeCounter() {
  }
  return counter;
 }
+
+
+var doCount = makeCounter();
+console.log(doCount());
+console.log(doCount());
+console.log(doCount());
+
 
 
 
