@@ -512,7 +512,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
 38. Concatenate : var addi = 3 + "4"; Gives "34'
 39. Conversion happens for :
 
-    - var multi = 3 \* "4"; Gives 12(number not string)
+    - var multi = 3 * "4"; Gives 12(number not string)
 
     - var divi = 80 / "10"; Gives 8 (number not string)
 
@@ -522,7 +522,7 @@ NOTE 2; Did you notice that the "=" operator is used in assignments,while the" =
 
 41. If you want to avoid concatenation bn string and number during addition use the keyword "Number" :
 
-    - Eg ; var num = 3 + Number(5);
+    - Eg ; var num = 3 + Number('5');
 
      <!-- Remember that the N in 'Number' is capitalised! -->
 
