@@ -100,6 +100,40 @@
 
 
 
+// An example fro closure and its useage
+
+//  CASE 1 : USUAL (if a "count" is defined somewhere again accidently , it can affect the functionality of the "counter" function)
+
+var count = 0;
+function counter() {
+ count = count + 1;
+ return count;
+};
+
+
+// CASE 2 : THE SAFEST
+// The best way must be implementing the concept of closures 
+
+function makeCounter() {
+ var count = 0;
+ function counter() {
+ count = count + 1;
+ return count;
+ }
+ return counter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
