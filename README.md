@@ -812,6 +812,23 @@ B. It is a convention to start the name of the constructor in capitals.
 
 
 
+C. When you want to add a method :
+
+   * function Dog(name, breed, weight) {
+ this.name = name;
+ this.breed = breed;
+ this.weight = weight;
+ this.bark = function() {
+ if (this.weight > 25) {
+ alert(this.name + " says Woof!");
+ } else {
+ alert(this.name + " says Yip!");
+ }
+ };
+}
+
+
+
 
 
 

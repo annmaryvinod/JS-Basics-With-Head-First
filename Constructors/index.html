@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Constructors</title>
+</head>
+
+<body>
+<h3>Check Console!</h3>
+
+
+<script>
+// Creating a constructor
+function Character (name,post,rating){
+    this.name = name;
+    this.post= post;
+    this.rating = rating;
+    this.like = function (){
+        if(this.rating > 5){
+            console.log("Brilliant");
+        } else{
+            console.log("Need to improve");
+        }
+    }
+};
+
+// Using it
+
+let snape = new Character("Snape","Teacher",10);
+let goyle = new Character("Goyle","Student",3);
+let harry = new Character("Harry","Student",7);
+let albus = new Character("Albus", "Teacher",10);
+
+
+snape.like();
+goyle.like();
+harry.like();
+albus.like();
+
+</script>
+</body>
+
+</html>
