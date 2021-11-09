@@ -787,6 +787,28 @@ bindings for all those free variables.
 
 
 
+61. Constructors 
+
+A. They can help create very silmilar objects multiple number of times in our code.
+
+* Syntax : 
+  
+  1. Creating :
+
+
+   * function Dog(name, breed, weight) {
+ this.name = name;
+ this.breed = breed;
+ this.weight = weight;
+}
+
+  2. Using :
+
+  var fido = new Dog ("Fido","Mixed",38);
+
+
+
+B. It is a convention to start the name of the constructor in capitals.
 
 
 
