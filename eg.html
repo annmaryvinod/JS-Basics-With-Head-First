@@ -16,7 +16,7 @@
 
 
 
-// case 1
+    // case 1
     // const add = (value) => {
 
     //   function sum(name) {
@@ -29,7 +29,7 @@
     // let a = add("student");
     // console.log(a("haii"));
 
-// case 2
+    // case 2
 
     // const getAdd = (num1) => {
 
@@ -44,54 +44,52 @@
     // console.log(f("dious"));
 
 
-// case 3 a
+    // case 3 a
 
-// function makeFunc() {
-//   var name = 'Mozilla';
-//   function displayName() {
-//     alert(name);
-//   }
-//   return displayName;
-// }
+    // function makeFunc() {
+    //   var name = 'Mozilla';
+    //   function displayName() {
+    //     alert(name);
+    //   }
+    //   return displayName;
+    // }
 
-// var myFunc = makeFunc();
-// myFunc();
-
-
-
-
-// case 3 b
-
-// function makeFunc() {
-//   var name = 'Mozilla';
-//    displayName = () => {
-//     alert(name);
-//   }
-//   displayName();
-// }
-
-// var myFunc = makeFunc();
-// myFunc();
+    // var myFunc = makeFunc();
+    // myFunc();
 
 
 
 
+    // case 3 b
+
+    // function makeFunc() {
+    //   var name = 'Mozilla';
+    //    displayName = () => {
+    //     alert(name);
+    //   }
+    //   displayName();
+    // }
+
+    // var myFunc = makeFunc();
+    // myFunc();
 
 
-// case 3 c
-
-// function makeFunc() {
-//   var newName = 'Mozilla';
-//   function name(){
-//     return "hello"
-//   };
-//   return name;
-// }
-// const myF = makeFunc();
-//  console.log(makeFunc());
-// console.log(myF())
 
 
+
+
+    // case 3 c
+
+    // function makeFunc() {
+    //   var newName = 'Mozilla';
+    //   function name(){
+    //     return "hello"
+    //   };
+    //   return name;
+    // }
+    // const myF = makeFunc();
+    //  console.log(makeFunc());
+    // console.log(myF())
 
 
 
@@ -100,43 +98,94 @@
 
 
 
-// An example fro closure and its useage
-
-//  CASE 1 : USUAL (if a "count" is defined somewhere again accidently , it can affect the functionality of the "counter" function)
-
-var count = 0;
-function counter() {
- count = count + 1;
- return count;
-};
-
-console.log(counter());
-console.log(counter());
-console.log(counter());
 
 
+    // An example fro closure and its useage
 
-// CASE 2 : THE SAFEST
-// The best way must be implementing the concept of closures 
+    //  CASE 1 : USUAL (if a "count" is defined somewhere again accidently , it can affect the functionality of the "counter" function)
 
-function makeCounter() {
- var count = 0;
- function counter() {
- count = count + 1;
- return count;
- }
- return counter;
-}
+    // var count = 0;
+    // function counter() {
+    //  count = count + 1;
+    //  return count;
+    // };
 
-
-var doCount = makeCounter();
-console.log(doCount());
-console.log(doCount());
-console.log(doCount());
+    // console.log(counter());
+    // console.log(counter());
+    // console.log(counter());
 
 
 
+    // CASE 2 : THE SAFEST
+    // The best way must be implementing the concept of closures 
 
+    // function makeCounter() {
+    //  var count = 0;
+    //  function counter() {
+    //  count = count + 1;
+    //  return count;
+    //  }
+    //  return counter;
+    // }
+
+
+    // var doCount = makeCounter();
+    // console.log(doCount());
+    // console.log(doCount());
+    // console.log(doCount());
+
+
+
+
+
+
+
+
+    // INSTANCE OF
+
+    function dogCatcher(obj) {
+     if(obj instanceof Dog){
+       return true;
+     } else {
+       return false;
+     }
+
+
+
+    };
+
+    
+    
+    
+    
+    function Cat(name, breed, weight) {
+      this.name = name;
+      this.breed = breed;
+      this.weight = weight;
+    }
+    var meow = new Cat("Meow", "Siamese", 10);
+    var whiskers = new Cat("Whiskers", "Mixed", 12);
+    var fido = { name: "Fido", breed: "Mixed", weight: 38 };
+    function Dog(name, breed, weight) {
+      this.name = name;
+      this.breed = breed;
+      this.weight = weight;
+      this.bark = function () {
+        if (this.weight > 25) {
+          alert(this.name + " says Woof!");
+        } else {
+          alert(this.name + " says Yip!");
+        }
+      };
+    }
+    var fluffy = new Dog("Fluffy", "Poodle", 30);
+    var spot = new Dog("Spot", "Chihuahua", 10);
+    var dogs = [meow, whiskers, fido, fluffy, spot];
+    for (var i = 0; i < dogs.length; i++) {
+      if (dogCatcher(dogs[i])) {
+        console.log(dogs[i].name + " is a dog!");
+      }
+    }
 
 
 

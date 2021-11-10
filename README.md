@@ -829,6 +829,12 @@ C. When you want to add a method :
 
 
 
+D. Refer page number 583 for "instance of".
+
+ * It is used to test if an object is created using the same constructor.
+
+
+
 
 
 
