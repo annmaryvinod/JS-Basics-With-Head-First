@@ -34,35 +34,35 @@
 
         };
 
-        Dog.prototype.run = function (){
+        Dog.prototype.run = function () {
             console.log("Run!");
         };
 
-        Dog.prototype.wag = function(){
+        Dog.prototype.wag = function () {
             console.log("Wag!");
         };
 
-        Dog.prototype.nourish = function(){
-            if (this.weight > 20){
+        Dog.prototype.nourish = function () {
+            if (this.weight > 20) {
                 console.log(this.name + " of weight " + this.weight + " is well nourished!");
             }
             else {
                 console.log(this.name + " of weight " + this.weight + " is malnourished!");
-                 alert("Please eat more " + this.name + "!");
+                alert("Please eat more " + this.name + "!");
             }
         }
 
 
         // Creating new instances
 
-        var fido = new Dog ("Fido" , "Mixed" , 38);
-        var brudo = new Dog ("Brudo" ,"RP",34);
-        var snoofy = new Dog ("Snoofy" , "Lab" ,40);
-        var joolie = new Dog ("Joolie","Pom",12);
+        var fido = new Dog("Fido", "Mixed", 38);
+        var brudo = new Dog("Brudo", "RP", 34);
+        var snoofy = new Dog("Snoofy", "Lab", 40);
+        var joolie = new Dog("Joolie", "Pom", 12);
 
         // Customising bark for Joolie
 
-        joolie.bark = function(){
+        joolie.bark = function () {
             console.log(this.name + " says YOYO!");
         };
 
@@ -75,6 +75,69 @@
         joolie.nourish();
 
         joolie.bark();
+
+        // Adding a new one
+
+
+        var barnaby = new Dog("Barnaby", "Basset Hound", 55);
+
+        // Let's add a new method
+        Dog.prototype.sit = function () {
+            console.log(this.name + " is now sitting");
+        };
+
+
+        barnaby.sit();
+
+
+        // Another function "making the dogs eat!"
+
+        Dog.prototype.eating = false;
+
+        Dog.prototype.eat = function () {
+            if (this.eating) {
+                console.log(this.name + " is already eating");
+            } else {
+                this.eating = true;
+                console.log(this.name + " is now eating");
+            }
+        };
+
+        barnaby.eating = true;
+
+
+        barnaby.eat();
+        snoofy.eat();
+        brudo.eating = true;
+        brudo.eat();
+
+
+
+
+        // trying the hasOwnProperty method here. Remember that this method checks inside the instance and not the prototype
+
+        // Checking the 'species' property inside fido and brudo => it is not in the instance but only in the prototype
+
+        var check1 = fido.hasOwnProperty('species');
+        var check2 = brudo.hasOwnProperty("species");
+
+        console.log(check1);
+        console.log(check2);
+
+
+         // Checking the 'eating' property 
+
+         var check3 = barnaby.hasOwnProperty('eating');
+         console.log(check3);
+
+         var check4 = fido.hasOwnProperty('eating');
+         console.log(check3);
+
+        //  since we are assigning the eating property to the instances , in both check3 and check4 return true
+
+
+
+        
     </script>
 </body>
 
