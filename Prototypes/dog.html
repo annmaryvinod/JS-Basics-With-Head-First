@@ -60,6 +60,12 @@
         var snoofy = new Dog ("Snoofy" , "Lab" ,40);
         var joolie = new Dog ("Joolie","Pom",12);
 
+        // Customising bark for Joolie
+
+        joolie.bark = function(){
+            console.log(this.name + " says YOYO!");
+        };
+
 
         // Calling
 
@@ -67,6 +73,8 @@
         fido.run();
 
         joolie.nourish();
+
+        joolie.bark();
     </script>
 </body>
 
