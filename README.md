@@ -834,6 +834,23 @@ D. Refer page number 583 for "instance of".
  * It is used to test if an object is created using the same constructor.
 
 
+62. Prototype :
+ * JavaScript objects can inherit properties and behavior from other
+objects. More specifically, JavaScript uses what is known as prototypal
+inheritance, and the object you’re inheriting behavior from is called
+the prototype. 
+
+* And all those that inherit from the prototype are called "instance" of the prototype.
+
+* only the methods and properties that are common to all dogs are present in the dog prototype, because all the dogs will inherit them.
+
+
+* It would be great to refer pages 610,611 etc.{enlightening!}
+
+
+
+
+
 
 
 
