@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Prototype</title>
+</head>
+<body>
+    <script>
+        // Creating the "robot" constructor
+
+        function Robot (name,year,owner){
+            this.name = name;
+            this.year = year;
+            this.owner = owner;
+        };
+
+        // assinging functions to the prototype
+
+        Robot.prototype.maker = function(){
+            if (this.year < 2000){
+                console.log("Maker : John Rigs");
+            }
+            else {
+                console.log("Maker : Samara Khulfi");
+            }
+        };
+
+        Robot.prototype.speak = function(){
+            console.log(this.name + " says Hello!");
+        };
+
+        Robot.prototype.makeCoffee = function(){
+           return this.name.length > 4;
+        };
+
+        var robby = new Robot("Robby" , 1942 , "Charles");
+        var catie = new Robot("Catie",2001,"Godrick");
+        var simmi = new Robot("Simmie",2021,"Ribbons");
+        var santo = new Robot("Santo" , 1957,"Jemma");
+        
+        
+        // customising maker
+
+
+        santo.maker = function(){
+            console.log("Maker : Jemma Will");
+        };
+
+        console.log(robby.owner = "Nijam");
+        robby.speak();
+
+
+        santo.maker();
+
+        simmi.maker();
+
+        robby.maker();
+
+
+        console.log(santo.makeCoffee());
+
+
+
+
+    </script>
+</body>
+</html>
