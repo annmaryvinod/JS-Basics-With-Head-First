@@ -848,6 +848,10 @@ the prototype.
 * It would be great to refer pages 610,611 etc.{enlightening!}
 
 
+63. Everything in javascript is an object including functions.
+ Eg ; remember the "prototype "property in the constructor function!
+
+
 
 
 
