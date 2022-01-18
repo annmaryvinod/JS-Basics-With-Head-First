@@ -19,6 +19,29 @@
             alert(phrase);
         }
         makePhrases();
+
+
+        function thinkQuote() {
+            let first = ["Think", "Smile","Jump","Eat"];
+            let second = ["Before","After","Up"];
+            let third = ["Speaking", "Fighting","Killing","Running"];
+
+            let x = Math.floor(Math.random() * first.length);
+            let y = Math.floor(Math.random() * second.length );
+            let z = Math.floor(Math.random() * third.length);
+
+
+            let thought = first[x] + " " + second[y] + " " + third[z] + "!" ;
+
+            console.log(thought);
+        }
+
+        thinkQuote();
+        thinkQuote();
+        thinkQuote();
+        thinkQuote();
+        thinkQuote();
+
     </script>
 </head>
 
