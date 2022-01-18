@@ -41,3 +41,16 @@ while (i < hasBubbleGum.length) {
     /* Note ; The third part of "for" loop is considered after
      executing the body. So the increment works within the for loop 
      but not within the while loop! */
+
+
+
+
+     var flavors = ["berry","vanilla","chocolate","mint"];
+
+     var fact = [false,false,true,true];
+     var i = 3;
+     while (i < flavors.length){
+       if(fact[i]){
+         alert(flavors[i] + " is an ice-cream!");
+       }
+     }
