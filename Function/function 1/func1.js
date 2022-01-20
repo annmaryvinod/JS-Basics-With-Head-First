@@ -8,6 +8,26 @@ function bark(name,weight){
     }
 }
 
+
+
+
+
+// -------------------------------------
+
+
+function message (term,person){
+    if (term > 0){
+        alert("I love " + term + " " + person);
+    }
+    else {
+        alert ("No way " + person);
+    }
+};
+
+message(2,'Suma');
+message(-2,"Aniv");
+
+
 // Calling a function
 
 bark('Roger',12);
